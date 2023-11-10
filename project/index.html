@@ -735,7 +735,7 @@
             <div class="box">
               <div class="detail-box">
                 <p>
-                  "Very efficient, works at a nice pace and is very willing to work with you."
+                  Very efficient, works at a nice pace and is very willing to work with you.
                 </p>
                 <h6>
                   Ashley
@@ -745,7 +745,7 @@
                 </p>
               </div>
               <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
+                <img src="images/client/usa.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -753,7 +753,7 @@
             <div class="box">
               <div class="detail-box">
                 <p>
-                  "Shahid and team Successfully completed the project on time. Those guys are awesome to work with."
+                  Shahid and team Successfully completed the project on time. Those guys are awesome to work with.
                 </p>
                 <h6>
                   Privesh Joseph
@@ -763,7 +763,7 @@
                 </p>
               </div>
               <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
+                <img src="images/client/joseph.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -771,6 +771,37 @@
       </div>
     </div>
   </section>
+  <script>
+    // Function to add a new client testimonial
+    function addClientTestimonial(comment, name, location, imageSrc) {
+      var carousel = document.querySelector('.client_owl-carousel');
+  
+      // Create new testimonial element
+      var newTestimonial = document.createElement('div');
+      newTestimonial.classList.add('item');
+  
+      newTestimonial.innerHTML = `
+        <div class="box">
+          <div class="detail-box">
+            <p>${comment}</p>
+            <h6>${name}</h6>
+            <p>${location}</p>
+          </div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${name}" class="box-img">
+          </div>
+        </div>
+      `;
+  
+      // Append the new testimonial to the carousel
+      carousel.appendChild(newTestimonial);
+    }
+  
+    // Example usage:
+    addClientTestimonial("I was very impressed with the quality of work that was delivered. I highly recommend Shahid for any project.", "Mazenet Solution", "Coimbatore, India", "images/client/mazenet.jpg");
+    addClientTestimonial("Sara is so humble, respectful, explain all details so fruitful. Always love to work anytime.", "Sara", "Dubai, UAE", "images/client/yousuf.jpg");
+    // Add more testimonials using similar calls
+  </script>
 
   <!-- end client section -->
 
