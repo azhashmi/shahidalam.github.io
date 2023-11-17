@@ -48,6 +48,7 @@
               HOME
             </span>
           </a>
+          
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -717,6 +718,146 @@
   'Project Details <P>As a Web Developer for Ticket System Integration, you will be responsible for seamlessly incorporating a ticket system script into our website, architecture. This includes customizing the ticket system appearance to match our branding, configuring its settings, and ensuring its smooth functionality across various devices and browsers. Your expertise in web development, problem-solving skills, and attention to detail will play a crucial role in delivering a user-friendly and efficient ticketing experience to our customers.', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls
 </script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('web', 'Do a website update in HTMl', 'images/html.jpg', 
+  'Project Details <P>Simple update for a file in html, we have some code for which html needs to be updated, immediate work', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls
+</script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('web', 'Integrate Ticket System', 'images/php.jpg', 
+  'Project Details <P>As a Web Developer for Ticket System Integration, you will be responsible for seamlessly incorporating a ticket system script into our website, architecture. This includes customizing the ticket system appearance to match our branding, configuring its settings, and ensuring its smooth functionality across various devices and browsers. Your expertise in web development, problem-solving skills, and attention to detail will play a crucial role in delivering a user-friendly and efficient ticketing experience to our customers.', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls
+</script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('script', 'Online Certificate Designer', 'images/script.jpg', 
+  'Project Details <P>The Online Certificate Designer is a web-based application that allows users to create and customize certificates for various purposes. This document outlines the technical specifications for the frontend development of this application.<P>## User Interface (UI) Design</P><P>1. **Certificate Creation:**- Users can create a new certificate by selecting a template or starting from scratch.- An intuitive drag-and-drop interface will allow users to add text, images, shapes, and signatures to the certificate.- Users can customize fonts, colors, and sizes for text elements.</P><P>2. **Template Library:*- Users can browse and select from a library of pre-designed certificate templates.- Admins can add, edit, or remove templates from the library.</P><P>3. **Certificate Preview:**- Users can preview their certificate design in real-time.- Zoom and pan functionality should be available for detailed inspection.', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls</P>
+</script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('script', 'Remove Noise and Smooth the Audio not make it dry and remove Audio Sibilance and Plosive', 'images/python.jpg', 
+  'Project Details <P>Remove noise and smooth the audio (Not make it dry) and Remove audio sibilance and plosive too<P>Web Based</P><P>Need someone that can either create OR use an existing python code to create a webbased application (Python and Flask as Front end). We can upload the file (file is Not uploaded on server) but local browser and then Hit a button called clean - at the backend it remove noise and smooth the audio (Not make it dry) and Remove audio sibilance and plosive.', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls</P>
+</script>
 
 
 
@@ -799,7 +940,24 @@
   
     // Example usage:
     addClientTestimonial("I was very impressed with the quality of work that was delivered. I highly recommend Shahid for any project.", "Mazenet Solution", "Coimbatore, India", "images/client/mazenet.jpg");
-    addClientTestimonial("Sara is so humble, respectful, explain all details so fruitful. Always love to work anytime.", "Sara", "Dubai, UAE", "images/client/yousuf.jpg");
+    addClientTestimonial("Shahid did amazing work, I will definitely hire again.", "Sara Jama", "Dubai, UAE", "images/client/yousuf.jpg");
+    addClientTestimonial("Thanks for the great input", "System Canada", "Brampton, Canada", "images/client/systemcanada.jpg");
+    addClientTestimonial("Well, done shahid and team. Shahid and his team demonstrated great enthusiasm over the course of the project. He was extremely responsive to my messages and requests. I was very satisfied with the output of the project. Would definitely be rehired and highly recommended!!. His  team is serious about meeting deadlines and the quality was as expected. I like his  teams quick to respond to messages and questions.", "Privesh Joseph", "Las Vegas, USA", "images/client/joseph.jpg");
+    addClientTestimonial("Shahid and his team were instrumental in helping me complete the network security project well in advance. It was good working with Shahid and the team, he was promptly available, and the team was able to guide us through the process remotely. His team is very knowledgeable about networking and fast in his thinking and responses, would recommend.", "Privesh Joseph", "Las Vegas, USA", "images/client/joseph.jpg");
+    addClientTestimonial("We are happy with his work.", "Fourty Two Lab", "Pune, India", "images/client/fourtytwo.jpg");
+    addClientTestimonial("I'm grateful for the opportunity to work with him, and I hope we can work together again soon.", "Permitech", "Dammam, Saudi Arabia", "images/client/permitech.jpg");
+    addClientTestimonial("The team worked both hard and intelligently on my project, and we met our goals.  Recommended, and will look to hire again.", "Ken Lyle", "San Vito, Costa Rica", "images/client/ken.jpg");
+    addClientTestimonial("Another great task, with some cutting edge ideas (mostly mine) implemented.", "Ken Lyle", "San Vito, Costa Rica", "images/client/ken.jpg");
+    addClientTestimonial("To me, these guys show some inexperience, to be honest.  But they are hard-working and dedicated, and solve problems.  I got  great value for dollars, and hope we will continue to grow together.", "Ken Lyle", "San Vito, Costa Rica", "images/client/ken.jpg");
+    addClientTestimonial("Amazing again.  These guys understand quicky, and execute really well.", "Ken Lyle", "San Vito, Costa Rica", "images/client/ken.jpg");
+    addClientTestimonial("Another amazing deliverable!  This team rocks.", "Ken Lyle", "San Vito, Costa Rica", "images/client/ken.jpg");
+    addClientTestimonial("Shahid was patient in understanding my requirements.", "Stacey Yeong", "Kuala Lumpur, Malaysia", "images/client/malaysia.jpg");
+    addClientTestimonial("Great team and great experience", "Privesh Joseph", "Las Vegas, USA", "images/client/joseph.jpg");
+    addClientTestimonial("Highly recommended, Work completed on time as assured, Output is good.", "Mazenet Solution", "Coimbatore, India", "images/client/mazenet.jpg");
+    addClientTestimonial("Shahid and his team exceeded my expectations with their professionalism and attention to detail. I would not hesitate to use their services again in the future. Many Thanks Shahid", "Ali", "Jeddah, Saudi Arabia", "images/client/saudi.jpg");
+    addClientTestimonial("Shahid exceeded my expectations with their professionalism and attention to detail. I would not hesitate to use their services again in the future.", "Emad", "Amman, Jordan", "images/client/emad.jpg");
+    addClientTestimonial("Nice Working with you Shahid", "System Canada", "Brampton, Canada", "images/client/systemcanada.jpg");
+
     // Add more testimonials using similar calls
   </script>
 
