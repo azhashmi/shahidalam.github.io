@@ -399,41 +399,6 @@
   }
 
   // Example usage:
-  addProject('network', 'Network Attacks Against Availability', 'images/ethical.jpg', 
-  'Project Details <P>Many web applications are often poorly written and lack adequate security features. These vulnerabilities can result in the application getting exploited by the bad guys and might even cause considerable damage to the organization.</P>', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
-  // Add more projects using similar calls
-</script>
-<script>
-  // Function to add a new project
-  function addProject(category, title, imageSrc, description, price, rating) {
-    var grid = document.querySelector('.filters-content .grid');
-
-    // Create new project element
-    var newProject = document.createElement('div');
-    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
-
-    newProject.innerHTML = `
-      <div class="box">
-        <div>
-          <div class="img-box">
-            <img src="${imageSrc}" alt="${title}">
-          </div>
-          <div class="detail-box">
-            <h5>${title}</h5>
-            <p>${description}</p>
-            <div class="options">
-              <h6>${price}</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    // Append the new project to the grid
-    grid.appendChild(newProject);
-  }
-
-  // Example usage:
   addProject('network', 'DevOps consulting needed to support Docker Kubernetes Proof of concept', 'images/devops.jpg', 
   'Project Details <P>1.We are expecting a single or Multiple node Docker to the local Windows 10/11 Environment  using minikubes and azure/container-registry</P><P>2.We are expecting a single-node, or Multi-layer Kubernetes cluster deployed with our middle-layer application.</P>', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls
@@ -714,41 +679,6 @@
   }
 
   // Example usage:
-  addProject('web', 'Integrate Ticket System', 'images/php.jpg', 
-  'Project Details <P>As a Web Developer for Ticket System Integration, you will be responsible for seamlessly incorporating a ticket system script into our website, architecture. This includes customizing the ticket system appearance to match our branding, configuring its settings, and ensuring its smooth functionality across various devices and browsers. Your expertise in web development, problem-solving skills, and attention to detail will play a crucial role in delivering a user-friendly and efficient ticketing experience to our customers.', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
-  // Add more projects using similar calls
-</script>
-<script>
-  // Function to add a new project
-  function addProject(category, title, imageSrc, description, price, rating) {
-    var grid = document.querySelector('.filters-content .grid');
-
-    // Create new project element
-    var newProject = document.createElement('div');
-    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
-
-    newProject.innerHTML = `
-      <div class="box">
-        <div>
-          <div class="img-box">
-            <img src="${imageSrc}" alt="${title}">
-          </div>
-          <div class="detail-box">
-            <h5>${title}</h5>
-            <p>${description}</p>
-            <div class="options">
-              <h6>${price}</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    // Append the new project to the grid
-    grid.appendChild(newProject);
-  }
-
-  // Example usage:
   addProject('web', 'Do a website update in HTMl', 'images/html.jpg', 
   'Project Details <P>Simple update for a file in html, we have some code for which html needs to be updated, immediate work', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls
@@ -891,6 +821,41 @@
   // Example usage:
   addProject('script', 'ML/AI Model to Extract Vehicle RC Numbers from Static Images', 'images/python.jpg', 
   'Project Details <P>Requirement : ML/AI model to extract Vehicle Rc numbers from static images of licence plates of vehicles. Model should also have supporting code to edit the images to best suit the Ocr process.<p>Constraint : Model should be extremely good with Green Electric vehicle number plates. Minimum success rate has to be around ~80 percent.</p><p>Expected deliverables : Tensorflow or Keras model, along with Python code where the whole model has been implemented and trained. Also a zip file containing the final weights.</p>', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls</P>
+</script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('app', 'Conversion of PhoneGap App to Cordova', 'images/app.jpg', 
+  'Project Details <P>We are trying to migrate our "PhoneGap" App to Cordova but are having issues. The builds are for Android and iOS. We require expert help in sorting the issues that we have. A brief of teh project: <p>1) On first launch, the app downloads an XML from our website and lists the "Brokers" in the XML file for the user to choose from.</p><p>2) Once the user chooses a "Broker", the url of the broker is stored in the phone and the user is redirected to the url.</p><p>3) The url is of a web app which runs inside the inAppBrowser.</p><p>4) On next launch of the App, the app checks for the existence of saved url. If found, it simply redircts without presenting a list as mentioned in (1).</p><p>We are having issues setting this all up in Cordova</p>', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls</P>
 </script>
 
