@@ -893,6 +893,41 @@
   'Project Details <P>We currently have a react native app that needs some repariing in order to build and deploy to android and ios store.</p>', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls</P>
 </script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('app', 'Flutter / Dart : Update Three configurations to Null Safety ! and do other small tasks !', 'images/app.jpg', 
+  'Project Details <P>FUTTER / DART : update 3 three configurations to NULL SAFETY ! and do other small tasks !</p><p>Work mainly with these libraries: table calendar ; provider ; fl chart ; scoped_model ; flutter calendar carousel . If you have no experience with these libraries</p><p>How I work: at the end of the work, you give me the code - then I deploy it, check the work - if all the work is done and identified problems in the work - I write to you to fix all the comments - if all the work is done successfully - I pay you for the work !</p><p>In general there is not much work to do</p>', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls</P>
+</script>
 
 
 
@@ -995,6 +1030,7 @@
     addClientTestimonial("Very dedicated and great work", "Atul", "India", "images/client/atul.jpg");
     addClientTestimonial("Shahid Alam and His team supported really superb. They perfectly done my needs. I recommend him to other clients as well. I hope in future also i will connect with him. Good luck.", "Anandh Prabhakaran", "India", "images/client/anandh.jpg");
     addClientTestimonial("The work has been completed to our satisfaction and the team was friendly, had no hassles and was available to assist. We should work again. Thanks to Shahid and his Team", "Abhay Sobti", "India", "images/client/abhay.jpg");
+    addClientTestimonial("Thank you and your team very much for the work done! With all my heart !!! as agreed, all tasks were done clearly, a good understanding of the FLUTTER architecture.I recommend you to work with them!!!", "Roman Myr", "Russia", "images/client/roman.jpg");
 
 
     // Add more testimonials using similar calls
