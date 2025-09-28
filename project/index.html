@@ -963,6 +963,41 @@
   'Project Details <P>I need an application which is related with News</p><p>I need both in Andriod and iOS and live streaming</p><p>Admin Panel should be in Web</p><p>From Admin Panel I can control Application</p>', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls</P>
 </script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('app', 'Create username buy sell website with payment integration', 'images/web.jpg', 
+  'Project Details <P>I am looking for Username buy/selling website (just like domain name buy/sell) <p>1.Login with Logify, show current username, balance, username price set if posted for selling, available discount code (get it from api)</p><p>2.User can buy a username for himself, user can buy a username as gift for another user, user can search, shortlist usernames, user search for username</p><p>3.Get list of suggested usernames and price (get data from api), user can shortlist usernames, user reserves a username for 10minutes and proceed to buy it (reserve via api)</p><p>4.Get current username, balance, and price if set for current username, get price of searched username and list of suggestions, reserve username, confirm payment for username purchase username gift</p>', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls</P>
+</script>
 
 
 
