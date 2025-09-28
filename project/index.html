@@ -928,6 +928,41 @@
   'Project Details <P>FUTTER / DART : update 3 three configurations to NULL SAFETY ! and do other small tasks !</p><p>Work mainly with these libraries: table calendar ; provider ; fl chart ; scoped_model ; flutter calendar carousel . If you have no experience with these libraries</p><p>How I work: at the end of the work, you give me the code - then I deploy it, check the work - if all the work is done and identified problems in the work - I write to you to fix all the comments - if all the work is done successfully - I pay you for the work !</p><p>In general there is not much work to do</p>', '<P><b>Project Rating</b><P><img src="images/5star.jpg" alt="Image"></P>', 4);
   // Add more projects using similar calls</P>
 </script>
+<script>
+  // Function to add a new project
+  function addProject(category, title, imageSrc, description, price, rating) {
+    var grid = document.querySelector('.filters-content .grid');
+
+    // Create new project element
+    var newProject = document.createElement('div');
+    newProject.classList.add('col-sm-6', 'col-lg-4', 'all', category);
+
+    newProject.innerHTML = `
+      <div class="box">
+        <div>
+          <div class="img-box">
+            <img src="${imageSrc}" alt="${title}">
+          </div>
+          <div class="detail-box">
+            <h5>${title}</h5>
+            <p>${description}</p>
+            <div class="options">
+              <h6>${price}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the new project to the grid
+    grid.appendChild(newProject);
+  }
+
+  // Example usage:
+  addProject('app', 'I need a News Portal App in Andriod and iOS', 'images/app.jpg', 
+  'Project Details <P>I need an application which is related with News</p><p>I need both in Andriod and iOS and live streaming</p><p>Admin Panel should be in Web</p><p>From Admin Panel I can control Application</p>', '<P><b>Project Rating</b><P><img src="images/progress.jpg" alt="Image"></P>', 4);
+  // Add more projects using similar calls</P>
+</script>
 
 
 
