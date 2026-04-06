@@ -865,6 +865,25 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  position: relative;
+  background: url("../img/bg/AboutMe.png") no-repeat center center;
+  background-size: cover;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* light overlay */
+  z-index: 0;
+}
+
+.about > * {
+  position: relative;
+  z-index: 1;
+}
+
 .about .profile-image-wrapper {
   position: relative;
 }
@@ -1122,6 +1141,25 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+.skills {
+  position: relative;
+  background: url("../img/bg/team.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* light overlay */
+  z-index: 0;
+}
+
+.skills > * {
+  position: relative;
+  z-index: 1;
+}
+
 .skills .skills-grid .skill-card {
   background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
   border-radius: 15px;
@@ -1372,6 +1410,25 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+.resume {
+  position: relative;
+  background: url("../img/bg/resume.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.resume::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* light overlay */
+  z-index: 0;
+}
+
+.resume > * {
+  position: relative;
+  z-index: 1;
+}
+
 .resume .section-header {
   margin-bottom: 2.5rem;
 }
@@ -1641,6 +1698,25 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services {
+  position: relative;
+  background: url("../img/bg/services.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* light overlay */
+  z-index: 0;
+}
+
+.services > * {
+  position: relative;
+  z-index: 1;
+}
+
 .services .service-item {
   height: 100%;
   padding: 2rem;
@@ -2011,6 +2087,27 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+
+  background: url("../img/bg/testimonial.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* adjust based on your theme */
+  z-index: 1;
+}
+
+.testimonials > * {
+  position: relative;
+  z-index: 2;
+}
 .testimonials {
   padding: 80px 0;
   overflow: hidden;
@@ -2482,6 +2579,25 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+.portfolio {
+  position: relative;
+  background: url("../img/bg/portfolio.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.portfolio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* light overlay */
+  z-index: 0;
+}
+
+.portfolio > * {
+  position: relative;
+  z-index: 1;
+}
+
 .portfolio-details {
   --section-spacing: 2.5rem;
 }
