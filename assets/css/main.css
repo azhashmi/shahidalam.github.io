@@ -867,7 +867,7 @@ section,
 --------------------------------------------------------------*/
 .about {
   position: relative;
-  background: url("../img/bg/AboutMe.png") no-repeat center center;
+  background: url("../img/bg/AboutMe.jpg") no-repeat center center;
   background-size: cover;
 }
 
